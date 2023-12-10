@@ -1,0 +1,29 @@
+@import './../../scss/_sizes';
+@import './../../scss/_colors';
+
+.sideBarMenu {
+    min-width: 250px;
+    min-height: calc(100vh - ($mainNavigationHeight + $mainFooterHeight));
+    @include colorsSLight;
+
+    ul {
+        width: 100%;
+
+        li {
+            height: $standardSpace * 6;
+            line-height: $standardSpace * 6;
+            padding-left: $standardSpace;
+            transition: $mainTransition;
+            width: 100%;
+            cursor: pointer;
+
+            a {
+                display: block;
+            }
+
+            &:hover {
+                background-color: $colorsSecondary;
+            }
+        }
+    }
+}

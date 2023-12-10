@@ -1,0 +1,22 @@
+@import './../../scss/_sizes';
+@import './../../scss/_colors';
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    h2 {
+        text-align: left;
+    }
+
+    form {
+        margin-top: $standardSpace * 2;
+
+        .loginButton {
+            width: 100%;
+        }
+    }
+}

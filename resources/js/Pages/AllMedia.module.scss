@@ -1,0 +1,51 @@
+@import './../../scss/_sizes';
+@import './../../scss/_colors';
+
+.allMedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: $standardSpace * 5;
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .content {
+        min-width: 1000px;
+        position: relative;
+        box-shadow: 0 2px 4px #00000073;
+        @include colorsSLight;
+        padding: $standardSpace * 2;
+        margin-top: $standardSpace * 5;
+        border-radius: $mainRadius;
+
+        table {
+            width: 100%;
+
+            thead {
+                tr {
+                    th {
+                        padding: $standardSpace * 2;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+                        padding: $standardSpace * 2;
+                    }
+
+                    &:nth-child(even) {
+                        @include colorsSLight;
+                    }
+                    &:nth-child(odd) {
+                        @include colorsSDark(0.3);
+                    }
+                }
+            }
+        }
+    }
+}

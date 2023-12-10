@@ -1,0 +1,30 @@
+@import './../../scss/_sizes';
+@import './../../scss/_colors';
+
+.mainNavigation {
+    display: flex;
+    flex-direction: row;
+    height: $mainNavigationHeight;
+    line-height: $mainNavigationHeight;
+    justify-content: space-between;
+    @include colorsPrimary;
+
+    .brand {
+
+    }
+
+    .options {
+        padding-right: $standardSpace * 2;
+
+        ul {
+
+            li {
+                
+                a {
+                    display: block;
+                }
+            }
+        }
+    }
+
+}

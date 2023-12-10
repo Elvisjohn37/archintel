@@ -1,0 +1,28 @@
+@import './../../scss/_sizes';
+@import './../../scss/_colors';
+
+.textBox {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    margin: $standardSpace * 2 0;
+
+    span {
+
+    }
+    
+    input {
+        margin-top: $standardSpace;
+        padding: $standardSpace;
+        background-color: lighten($colorsSecondary, 5%);
+        border: 2px solid transparent;
+        transition: $mainTransition;
+        border-radius: $mainRadius;
+        color: $colorsSText;
+
+        &:focus {
+            outline: 2px solid lighten($colorsSecondary, 10%);
+            box-shadow: $mainBoxShadow;
+        }
+    }
+}

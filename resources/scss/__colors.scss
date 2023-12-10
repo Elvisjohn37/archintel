@@ -1,0 +1,53 @@
+// $colorsPrimary: #fedbd0;
+// $colorsPLight: lighten($colorsPrimary, 5%);
+// $colorsPDark: darken($colorsPrimary, 15%);
+// $colorsPText: darken($colorsPrimary, 70%);
+
+// $colorsSecondary: #fafafa;
+// $colorsSLight: lighten($colorsSecondary, 5%);
+// $colorsSDark: darken($colorsSecondary, 5%);
+// $colorsSText: darken($colorsSecondary, 70%);
+
+$colorsPrimary: #42c2af;
+$colorsPLight: lighten($colorsPrimary, 20%);
+$colorsPDark: darken($colorsPrimary, 15%);
+$colorsPText: lighten($colorsPrimary, 70%);
+
+$colorsSecondary: #0f172a;
+$colorsSLight: lighten($colorsSecondary, 5%);
+$colorsSDark: darken($colorsSecondary, 5%);
+$colorsSText: lighten($colorsSecondary, 70%);
+
+@mixin colorsPrimary($opac: 1) {
+    background-color: $colorsPrimary;
+    color: $colorsPText;
+    opacity: $opac;
+}
+
+@mixin colorsPLight() {
+    background-color: $colorsPLight;
+    color: $colorsPText;
+}
+
+@mixin colorsPDark() {
+    background-color: $colorsPDark;
+    color: $colorsPText;
+}
+
+@mixin colorsSecondary($opac: 1) {
+    background-color: $colorsSecondary;
+    color: $colorsSText;
+    opacity: $opac;
+}
+
+@mixin colorsSLight($opac: 1) {
+    background-color: $colorsSLight;
+    color: $colorsSText;
+    opacity: $opac;
+}
+
+@mixin colorsSDark($opac: 1) {
+    background-color: $colorsSDark;
+    color: $colorsSText;
+    opacity: $opac;
+}

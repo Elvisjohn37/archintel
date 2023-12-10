@@ -1,0 +1,7 @@
+@import './../../scss/_sizes';
+@import './../../scss/_colors';
+
+.mainFooter {
+    height: $mainFooterHeight;
+    @include colorsPrimary(0.5);
+}

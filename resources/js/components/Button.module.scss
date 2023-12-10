@@ -1,0 +1,20 @@
+@import './../../scss/_sizes';
+@import './../../scss/_colors';
+
+.button {
+    padding: $standardSpace 0;
+    button {
+        @include colorsPrimary;
+        padding: $standardSpace $standardSpace * 2;
+        border: unset;
+        border-radius: $mainRadius;
+        transition: $mainTransition;
+        cursor: pointer;
+        font-weight: 700;
+
+        &:hover {
+            background-color: $colorsPDark;
+            box-shadow: $mainBoxShadow;
+        }
+    }
+}

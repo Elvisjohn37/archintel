@@ -1,0 +1,60 @@
+@import './../../scss/_sizes';
+@import './../../scss/_colors';
+
+.createArticle {
+    display: flex;
+    flex-direction: column;
+    padding: $standardSpace * 5;
+    align-items: center;
+    width: 100%;
+
+    h1 {
+        font-size: 30px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        .formContent {
+            padding: $standardSpace * 5 0 $standardSpace;
+            display: flex;
+            flex-direction: row;
+
+            .formGroup {
+                display: flex;
+                flex-direction: column;
+                min-width: 300px;
+                margin: $standardSpace 0;
+                margin: $standardSpace;
+
+                input,
+                textarea {
+                    margin-top: $standardSpace;
+                    padding: $standardSpace;
+                    background-color: lighten($colorsSecondary, 5%);
+                    border: 2px solid transparent;
+                    transition: $mainTransition;
+                    border-radius: $mainRadius;
+                    color: $colorsSText;
+
+                    &:focus {
+                        outline: 2px solid lighten($colorsSecondary, 10%);
+                        box-shadow: $mainBoxShadow;
+                    }
+                }
+
+                textarea {
+                    min-width: 800px;
+                }
+            }
+        }
+
+        .formActions {
+            width: 100%;
+            display: flex;
+            flex-direction: end;
+            flex-direction: row-reverse;
+            padding: $standardSpace;
+        }
+    }
+}

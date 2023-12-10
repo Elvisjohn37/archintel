@@ -1,0 +1,61 @@
+@import './../../scss/_sizes';
+@import './../../scss/_colors';
+
+.home {
+    width: 100%;
+    position: relative;
+
+    .dashboardContent {
+        position: relative;
+        width: 100%;
+        padding: $standardSpace * 5;
+
+        .articleContainer {
+            margin-bottom: $standardSpace * 5;
+            padding: $standardSpace * 4 $standardSpace * 2;
+            width: 100%;
+            box-shadow: 0 2px 4px #00000073;
+            display: flex;
+            flex-direction: column;
+            @include colorsSLight;
+            border-radius: $mainRadius;
+
+            .heading {
+                display: flex;
+                flex-direction: row;
+
+                .image {
+                    width: 200px;
+                    border-radius: $mainRadius;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 $standardSpace * 2;
+
+                    .title {
+                        margin-bottom: $standardSpace;
+                    }
+
+                    .company {
+                        margin-bottom: $standardSpace;
+                    }
+
+                    a {
+                        color: $colorsPrimary;
+                    }
+                }
+            }
+
+            .content {
+                margin-top: $standardSpace;
+            }
+        }
+    }
+}

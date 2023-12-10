@@ -1,0 +1,16 @@
+@import './../scss/_sizes';
+@import './../scss/_colors';
+
+.app {
+    @include colorsSecondary;
+
+    .sideBarMenu {
+
+    }
+
+    .mainContent {
+        min-height: calc(100vh - ($mainNavigationHeight + $mainFooterHeight));
+        display: flex;
+        flex-direction: row;
+    }
+}
