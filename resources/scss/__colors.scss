@@ -29,9 +29,10 @@ $colorsSText: lighten($colorsSecondary, 70%);
     color: $colorsPText;
 }
 
-@mixin colorsPDark() {
+@mixin colorsPDark($opac: 1) {
     background-color: $colorsPDark;
     color: $colorsPText;
+    opacity: $opac;
 }
 
 @mixin colorsSecondary($opac: 1) {

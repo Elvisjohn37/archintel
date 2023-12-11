@@ -18,10 +18,11 @@ const handleSubmit = () => {
             company: company.value,
             content: content.value,
         })
-        .then((response) => {
+        .then(() => {
+            alert("Article successfully submitted!")
             resetForm()
         })
-        .catch()
+        .catch(() => alert("Something went wrong!"))
         .finally()
 }
 
