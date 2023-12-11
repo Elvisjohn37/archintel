@@ -19,7 +19,7 @@ onMounted(() => {
 
 <template>
     <div :class="styles.allMedia">
-        <h1>Dashboard</h1>
+        <h1>All Media</h1>
         <div :class="styles.content">
             <table>
                 <thead>

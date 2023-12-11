@@ -6,13 +6,7 @@
         <div :class="styles.options">
             <ul>
                 <li>
-                    <RouterLink
-                        v-if="userInfo?.isLogin"
-                        @click="handleLogout"
-                        :class="styles.link"
-                        to="/"
-                        >Logout</RouterLink
-                    >
+                    <a v-if="userInfo?.isLogin" @click="handleLogout">Logout</a>
                 </li>
             </ul>
         </div>
@@ -29,7 +23,7 @@ const user = storeUser()
 const userInfo = JSON.parse(localStorage.getItem('userInfo'))
 
 const handleLogout = () => {
-    localStorage.removeItem('userInfo');
+    localStorage.removeItem('userInfo')
     axios
         .post('/logout')
         .then(() => {

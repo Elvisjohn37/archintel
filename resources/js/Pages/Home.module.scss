@@ -1,9 +1,21 @@
 @import './../../scss/_sizes';
 @import './../../scss/_colors';
+@import './../../scss/_keyframes';
 
 .home {
+    display: flex;
+    flex-direction: column;
+    padding: $standardSpace * 5;
     width: 100%;
     position: relative;
+    @include fadeIn;
+    
+
+    h1 {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
 
     .dashboardContent {
         position: relative;
