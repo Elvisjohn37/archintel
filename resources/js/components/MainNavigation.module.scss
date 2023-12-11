@@ -8,6 +8,7 @@
     line-height: $mainNavigationHeight;
     justify-content: space-between;
     @include colorsSecondary;
+    align-items: center;
 
     &.login {
         @include colorsPrimary;
@@ -37,6 +38,9 @@
                     cursor: pointer;
                     transition: $mainTransition;
                     padding: 0 $standardSpace * 2;
+                    height: calc($mainNavigationHeight - $standardSpace * 2);
+                    line-height: calc($mainNavigationHeight - $standardSpace * 2);
+                    border-radius: $mainRadius;
 
                     &:hover {
                         @include colorsPDark(0.5);
