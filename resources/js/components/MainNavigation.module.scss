@@ -7,10 +7,22 @@
     height: $mainNavigationHeight;
     line-height: $mainNavigationHeight;
     justify-content: space-between;
-    @include colorsPrimary;
+    @include colorsSecondary;
+
+    &.login {
+        @include colorsPrimary;
+    }
 
     .brand {
+        height: $mainNavigationHeight;
+        width: 250px;
+        @include colorsSecondary;
+        padding: $standardSpace 0;
 
+        img {
+            height: 100%;
+            margin: 0 auto;
+        }
     }
 
     .options {

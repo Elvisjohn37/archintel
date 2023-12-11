@@ -1,7 +1,14 @@
 <template>
-    <div :class="styles.mainNavigation">
+    <div
+        :class="
+            classnames([
+                styles.mainNavigation,
+                userInfo?.isLogin && styles.login,
+            ])
+        "
+    >
         <div :class="styles.brand">
-            <img src="" />
+            <img src="./../../../public/archintel-logo.gif" />
         </div>
         <div :class="styles.options">
             <ul>
@@ -18,6 +25,7 @@ import styles from './MainNavigation.module.scss'
 import { RouterLink } from 'vue-router'
 import storeUser from './../../store/user'
 import axios from 'axios'
+import classnames from 'classnames'
 
 const user = storeUser()
 const userInfo = JSON.parse(localStorage.getItem('userInfo'))

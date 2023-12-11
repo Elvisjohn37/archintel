@@ -19,6 +19,10 @@
 
             a {
                 display: block;
+
+                &.router-link-active {
+                    color: $colorsPrimary;
+                }
             }
 
             &:hover {
